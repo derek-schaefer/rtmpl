@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+TAG=$1
+DIR=rtmpl-$TAG
+
+for r in rtmpl-*; do
+  zip -r $r.zip $r
+  tar cfzv $r.tar.gz $r
+done
+
+mkdir $DIR
+cp rtmpl-*{.zip,.tar.gz} $DIR
