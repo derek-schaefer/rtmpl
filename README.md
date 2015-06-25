@@ -83,7 +83,10 @@ The template syntax is provided by Go's [text.Template](http://golang.org/pkg/te
 
 Additional helpers:
 
-+ `env(string) string`: returns an environment variable by name
++ `env(string) string`: [os.Getenv](https://golang.org/pkg/os/#Getenv)
++ `title(string) string`: [strings.Title](http://golang.org/pkg/strings/#Title)
++ `upcase(string) string`: [strings.ToUpper](http://golang.org/pkg/strings/#ToUpper)
++ `downcase(string) string`: [strings.ToLower](http://golang.org/pkg/strings/#ToLower)
 
 ## License
 
